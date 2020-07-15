@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML5 Media Tags</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="rudolph.css" />
+    <script src='rudolph.js'></script>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <div class='w3-bar w3-black'>
+        <a href='index.html' class='w3-bar-item w3-button'>HOME</a>
+    </div>
+
+    <div class='w3-container w3-center'>
+        <h1 class='w3-text-red'><strong>Tribute To Rudolph TRNR</strong></h1>
+    </div>
+
+    <div class='w3-container w3-center' id='movie'>
+        <h3 class='w3-text-red'><strong>Rudolph The Red Nose Reindeer THE MOVIE!</strong></h3><br>
+        <button class='w3-btn w3-green w3-round' onclick="control()">Play/Pause</button> 
+        <button class='w3-btn w3-green w3-round' onclick="maximize()">Large</button>
+        <button class='w3-btn w3-green w3-round' onclick="minimize()">Small</button>
+        <button class='w3-btn w3-green w3-round' onclick="reset()">Normal</button>
+        <br><br>
+    </div>
+    <div class='w3-container w3-center w3-margin'>
+        <video id="rudolph" width="480">
+            <source src="https://tanner-john.github.io/CIT261/video/RTRNR.mp4" type="video/mp4">
+        </video><br>
+    </div>
+
+    <div class='w3-container w3-center' id='movie'>
+        <h3 class='w3-text-red'><strong>Rudolph The Red Nose Reindeer THE SONG!</strong></h3><br>
+        <audio controls>
+            <source src="https://tanner-john.github.io/CIT261/audio/RudolphSong.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class='w3-cotainer w3-center' id='movie'>
+        <h3 class='w3-text-red'><strong>Draw Your Own Rudolph The Red Nose Reindeer!</strong></h3><br>
+    </div>
+
+    <div class='w3-container w3-center w3-margin'>
+        <button class='w3-btn w3-brown w3-round' onclick='brown()'>BROWN</button>
+        <button class='w3-btn w3-red w3-round' onclick='red()'>RED</button>
+        <button class='w3-btn w3-black w3-round' onclick='black()'>BLACK</button>
+        <button class='w3-btn w3-yellow w3-round' onclick='gold()'>GOLD</button>
+        <button class='w3-btn w3-green w3-round' onclick='green()'>GREEN</button>
+        <button class='w3-btn w3-blue w3-round' onclick='blue()'>BLUE</button>
+        <button class='w3-btn w3-white w3-round' onclick='white()'>ERASER</button>
+    </div>
+
+    <div class='w3-container w3-center w3-margin'>
+        <canvas id='draw' width='400' height='400' style='border:1px solid #000000'></canvas>
+    </div>
+
+    <script src='canvas.js'></script>
+
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+    </div>
+
+    <script>
+        getMovie();
+    </script>
+
+</body>
+</html>
